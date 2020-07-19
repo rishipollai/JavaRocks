@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Complex
+{
+    double real,imag;
+    Complex(double r,double s)
+    {
+       this.real=r;
+       this.imag=s;
+    }
+    public static Complex sum(Complex c1,Complex c2)
+    {
+        Complex temp=new Complex(0,0);
+        temp.real=c1.real+c2.real;
+        temp.imag=c1.imag+c2.imag;
+        return temp;
+    }
+    public static void main(String args[])
+    {
+        double x,y,a,b;
+        Scanner sc=new Scanner(System.in);
+        x=sc.nextDouble();
+        y=sc.nextDouble();
+        a=sc.nextDouble();
+        b=sc.nextDouble();
+        Complex c1=new Complex(x,y);
+        Complex c2=new Complex(a,b);
+        Complex res=sum(c1,c2);
+        System.out.print(res.real+" "+res.imag+"i");
+    }
+}

@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Ab
+{
+    public static void main(String args[])
+    {
+        long x,y;
+        int carry=0,i=0;
+        Scanner sc=new Scanner(System.in);
+        x=sc.nextLong();
+        y=sc.nextLong();
+        sc.close();
+        int[] sum=new int[10];
+
+        while(x!=0 || y!=0)
+        {
+            sum[i++]=(int)((x%10+y%10+carry)%2);
+            carry=(int)((x%10+y%10+carry)/2);
+            x=x/10;
+            y=y/10;
+        }
+        if(carry!=0)
+            sum[i++]=carry;
+       --i;
+       while(i>=0)
+       {
+           System.out.print(sum[i--]);
+       }
+    }
+
+}

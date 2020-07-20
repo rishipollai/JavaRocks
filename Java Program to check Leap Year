@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Ab
+{
+    public static void main(String args[])
+    {
+        int x;
+        Scanner sc=new Scanner(System.in);
+        x=sc.nextInt();
+        boolean m=true;
+        if(x%4==0)
+        {
+            if(x%100==0)
+            {
+                if(x%400==0)
+                {
+                    m=true;
+                }
+                else
+                  m=false;
+            }
+            else
+              m=true;
+        }
+        else
+          m=false;
+      if(m==true)
+           System.out.println(x+" is leap year");
+      else
+         System.out.println(x+" is not leap year");
+    }
+}

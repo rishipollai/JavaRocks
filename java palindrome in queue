@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.Queue;
+import java.util.LinkedList;
+class Ab
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        Queue q=new LinkedList();
+
+        for(int i=str.length()-1;i>=0;i--)
+        {
+            q.add(str.charAt(i));
+        }
+        String s="";
+        while(!q.isEmpty())
+        {
+            s=s+q.remove();
+        }
+        
+        if(str.equals(s))
+           System.out.println("Yes");
+        else
+           System.out.println("No");
+    }
+}

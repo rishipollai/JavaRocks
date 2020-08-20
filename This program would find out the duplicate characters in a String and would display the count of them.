@@ -1,0 +1,39 @@
+import java.util.*;
+
+class A
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String s;
+        s=sc.nextLine();
+        
+        char[] ch= s.toCharArray();
+        
+        Map<Character,Integer> mp=new HashMap<Character,Integer>();
+        
+        for(Character x:ch)
+        {
+            if(mp.containsKey(x))
+            {
+                mp.put(x,mp.get(x)+1);
+            }
+            else
+            {
+                mp.put(x,1);
+            }
+        }
+        
+        Set<Character> st=mp.keySet();
+        
+        
+        
+        for(Character x:st)
+        {
+            if(mp.get(x)>1 && x!=' ')
+            {
+                System.out.println("Char "+x+" "+mp.get(x));
+            }
+        }
+    }
+}

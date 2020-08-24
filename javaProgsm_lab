@@ -1,0 +1,62 @@
+1)write a program to take character input from the user and pass it to switch block containging all cased with interger values and vice versa.
+2)write a program to find the largest of 3 numbers using nested if and ternary operator.
+3)write a program to enter a 1D array from the user and find the sum of all the odd elements and even elementss
+4)write a program to implement logical and bitwise operators in java
+
+
+import java.util.*;
+  
+public class A 
+{ 
+    public static void main(String[] args) 
+    { 
+       Scanner sc=new Scanner(System.in);
+       char ch;
+       ch=sc.next().charAt(0);
+       switch(ch)
+       {
+           case 65:
+           {
+               System.out.println("Ascill value of 65");
+               break;
+           }
+           
+           case 97:
+             {
+                 System.out.println("Ascii value is 97");
+                 break;
+             }
+            default:
+            {
+                System.out.println("no record found");
+                break;
+            }
+           
+           
+       }
+       
+    } 
+} 
+
+
+
+============================================
+
+import java.util.Scanner;
+public class Largest_Ternary 
+{
+    public static void main(String[] args) 
+    {
+        int a, b, c, d;
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter all three numbers:");
+        a = s.nextInt();
+        b = s.nextInt();
+        c = s.nextInt();
+        d = c > (a > b ? a : b) ? c : ((a > b) ? a : b);
+        System.out.println("Largest Number:"+d);
+    }
+}
+
+=======================================
+

@@ -1,0 +1,27 @@
+import java.util.*;
+public class A
+{
+    public static void main(String[] args) 
+    {
+       Scanner sc =new Scanner(System.in);
+
+       String s;
+       System.out.println("Enter the line:");
+       s=sc.nextLine();
+       
+       String word[]=s.split(" ");
+       String wo="";
+       for(int i=0;i<word.length;i++)
+       {
+            String rev=word[i];
+            String reverse="";
+            for(int j=(rev.length())-1;j>=0;j--)
+            {
+                reverse=reverse+rev.charAt(j);
+            }  
+            wo=wo+reverse+" ";
+       }
+       System.out.println(wo);
+
+    }
+}

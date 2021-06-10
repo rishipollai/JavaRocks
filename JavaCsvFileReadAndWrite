@@ -1,0 +1,111 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) throws IOException {
+     //File path
+     String file = "src\\BankDetailsCsv.csv";
+     BufferedReader reader = null;
+     String line="";
+     try{
+         //Read file
+         reader = new BufferedReader(new FileReader(file));
+         int m=0;
+         int f=0;
+
+         //continue the loop when line is present
+         while ((line=reader.readLine())!=null){
+              m++;
+              double interest=0;
+
+              //split line and add it to list
+              List<String> row;
+              row= Arrays.asList(line.split(","));
+
+             if(m==1){
+                 for(String x:row){
+
+                     System.out.printf("%-10s",x);
+                 }
+             }
+             else {
+                 int k=0;
+                 //calculating interest
+                 for(String x:row){
+                     System.out.printf("%-10s",x);
+                     k++;
+                     if(k==3){
+                         int balance=Integer.parseInt(x);
+                         //interest calculation method
+                         interest=calcInterest(balance);
+                         System.out.println(interest);
+                     }
+                 }
+
+             }
+
+             System.out.println();
+
+             //for writing into the file
+             String name= row.get(0);
+             String Accno= row.get(1);
+             String balance= row.get(2);
+             String inter="";
+             if(f==0){
+                 inter=row.get(3);
+             }
+             else{
+                 inter= String.valueOf(interest);
+             }
+             saveRecord(name,Accno,balance,inter);
+             f++;
+
+
+
+         }
+     }
+     catch (FileNotFoundException e) {
+         e.printStackTrace();
+     } catch (IOException e) {
+         e.printStackTrace();
+     } finally {
+         reader.close();
+
+     }
+    }
+
+    //calculate interest method
+    public  static  double calcInterest(int amount){
+        double interest=0;
+        if(amount>=0 && amount<1000){
+            interest=amount/100;
+        }
+        if(amount>=1000 && amount<5000){
+            interest=amount*0.02;
+        }
+        if(amount>=5000){
+            interest=amount*0.03;
+        }
+        return  interest;
+    }
+
+    //file writing in csv format method
+    public static void saveRecord(String name,String Accno,String balance,String interest){
+       try {
+           FileWriter fw=new FileWriter("src\\Bank.csv",true);
+           BufferedWriter bw=new BufferedWriter(fw);
+           PrintWriter pw = new PrintWriter(bw);
+
+           pw.println(name+" "+Accno+" "+balance+" "+interest);
+           pw.println();
+
+           pw.flush();
+           pw.close();
+
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
+    }
+}
+
+

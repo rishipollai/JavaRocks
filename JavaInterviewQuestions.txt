@@ -1,0 +1,66 @@
+
+-----------------------------------------------
+1. autoboxing
+2. Wrapper class
+3. Immutable examples of Immutable classes
+4. Diff between wait and sleep
+5. fail safe iterator
+6. Why do we orverride hashcode and toString?
+7.
+
+
+-------------------------------------------------
+1. Class Loader
+2. What is Enum?
+3. How to prevent a class from being sub-classed?
+4. DOM and SAX parser
+5. Diff between in Iterator and Enumeration
+6. What is String pool?
+7. Comparator and comparable
+8. What is race condition and deadlock?
+
+
+-----------------------------------------------
+diff in finalize and finally
+diff in ex and error
+try without catch
+diff in abstrack class and interface
+diff String, StringBuffer and String builder
+use cases of String Buffer and StringBuilder
+Methods in Object class
+hashcode toString equals
+diff in String name = "Akshay";
+String name = new String("Akshaya")
+diff in extends and implements
+diff in overload and override
+how to to prevent method overriding?
+diffrent ways of synchronization
+synchronization block
+synchronization method
+what is List , ArrayList and difference?
+
+
+
+--------------------------------------------------------------------------------
+use case of Queue interface
+types of variables
+Class
+context switching
+diff Runnable and Thread class
+if given a chance which one you will prefer and why
+
+What is List interface?
+what is HashMap?
+What is Queue?
+
+
+
+-----------------------------------------------------------------------------
+What is exception?
+How do you create user defined Exception?
+What is interface?
+What is abstract class?
+When we have interface then why we need abstract class?
+What is static block?
+Diff in throw and throws
+What is Serialization/Deserialization?

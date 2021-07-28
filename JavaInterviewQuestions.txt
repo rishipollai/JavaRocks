@@ -64,3 +64,138 @@ When we have interface then why we need abstract class?
 What is static block?
 Diff in throw and throws
 What is Serialization/Deserialization?
+
+===========================================================
+1. What is Constructor?
+2. what is association, composition, Aggregation?
+3. What happens when you start your application with @SpringBootApplication
+4. What is garbage collection?
+5. What is locking mechanism multithreading?
+6. What is ExecutorService? How is it different from Thread class?
+7. What is actuator?
+8. How do you change the property value in spring boot application without restarting the application?
+9. What is Spring cloud?
+10. What is Aspect in Spring and what is aspect oriented programming?
+11. How do you manage the central exception handling or logging using AOP?
+12. What is JPA?
+13. what are the benefits of ORM?
+14. Diff between JPA and hibernate
+15. Annotations of JPA and Hibernate examples
+16. What is DAO layer?
+17. What is sub query?
+18. What is Serialization/Deserialization?
+19. Exception handling in Microservices
+20. What is Web Sockets?
+21. Inter microservices communication (Explain about RestTemplate)
+
+For Ashish-----------------------------------------------------------
+
+Ravi Thapa, 2 min
+Akshaya and Hrushikesh
+-------------------------------------------------------------------------------------------------
+
+1. What is HQL?
+2. What are the important interfaces names in Hibernate?
+SessionFactory (org.hibernate.SessionFactory)
+Session (org.hibernate.Session)
+Transaction (org.hibernate.Transaction)
+3.  What is Hibernate SessionFactory?
+SessionFactory is the factory class that is used to get the Session objects. 
+The SessionFactory is a heavyweight object so usually, it is created during application startup 
+and kept for later use. This SessionFactory is a thread-safe object which is used by all the 
+threads of an application. If you are using multiple databases then you would have to create 
+multiple SessionFactory objects.
+
+4. What are the collection types in Hibernate?
+There are five collection types in hibernate used for one-to-many relationship mappings.
+
+Bag
+Set
+List
+Array
+Map
+
+5. What are the different states of a persistent entity?
+
+It may exist in one of the following 3 states:
+
+Transient: This is not associated with the Session and has no representation in the database.
+Persistent: You can make a transient instance persistent by associating it with a Session.
+Detached: If you close the Hibernate Session, the persistent instance will become a detached instance.
+
+6. What is lazy loading?
+
+7. Explain about Hibernate Proxy and how it helps in Lazy loading?
+
+Hibernate uses a proxy object in order to support Lazy loading.
+When you try loading data from tables, Hibernate doesn’t load all the mapped objects.
+After you reference a child object through getter methods, if the linked entity is not present in the session cache, then the proxy code will be entered to the database and load the linked object.
+It uses Java assist to effectively and dynamically generate sub-classed implementations of your entity objects.
+
+
+8. When do you use merge() and update() in Hibernate?
+9. Difference between get() vs load() method in Hibernate?
+10. Difference between save() and saveOrUpdate() method of Hibernate?
+11. Difference between managed associations and Hibernate associations?
+
+12. Difference between TCP and UDP protocol?
+13. What is the difference between IO and NIO?
+14. Difference between **ArrayList** and **HashSet** in Java?
+15. How do you write a rest application to expose the data? Could you explain all the steps?
+16. What is double checked locking in Singleton?
+17. Difference between the transient and volatile variable in Java?
+18. Why you override hashcode, along with **equals()** in Java?              // the most common question
+19. How does Autoboxing of Integer work in Java?
+20. Difference between Polymorphism and Inheritance in Java?
+
+21. What is the **String** pool in Java?
+22. Difference between **Comparator** and **Comparable** in Java?
+23. Why wait and notify method are declared in **Object** class in Java? 
+24. Difference between Race condition and Deadlock in Java?
+25. What is the difference between post and put method of RESTFull api? What is the benefit of put over Post?
+26. What is Session?
+27. What is Interceptor?
+28. What is Frontcontroler and name of Front controller in Spring?
+29. What is Factory Design Pattern?
+30. What DI and types of DI?
+31. Setter Vs constructor Injection
+32. Xml Configuration vs Annotation
+33. Examples of Git command
+34. What is ArrayList
+Operation	LinkedList time complexity	ArrayList time complexity
+Search by value	O(N)	O(N)
+Get by index	O(N)	O(1)
+Remove by value	O(N)	O(N)
+Remove by index	O(N)	O(N)
+
+35. LinkedList
+LinkedList is a linear data structure that consists of nodes holding a data field and a reference to another node. For more LinkedList features and capabilities, have a look at this article here.
+
+Let's present the average estimate of the time we need to perform some basic operations:
+
+add() – appends an element to the end of the list. So it only updates a tail, therefore O(1) constant-time complexity.
+add(index, element) – in average runs in O(n) time
+get() – searching for an element takes O(n) time
+remove(element) – to remove an element, only pointers have to be updated. This operation is O(1).
+remove(index) – to remove an element by index, we first need to find it, therefor the overall complexity is O(n)
+contains() – also has O(n) time complexity
+
+36. What is red black Tree?
+37. How hash map works?
+38 What is Hashing?
+39. Difference between fail-safe and fail-fast iterators in Java?
+hint: fail-safe doesn't throw ConcurrentModificationException while fail-fast does whenever they detect an outside change on the underlying collection while iterating over it.
+
+40. What is Design pattern?
+
+
+40. Difference between checked and unchecked Exception in Java?
+hint: In case of checked, you must handle exception using catch block, while in case of unchecked, it's up to you; compile will not bother you.
+
+
+41. What is hash code?
+
+42. Wrapper Class?
+
+43. What is Dialects?
+=============================================

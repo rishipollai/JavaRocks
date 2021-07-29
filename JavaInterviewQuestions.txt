@@ -94,6 +94,8 @@ Ravi Thapa, 2 min
 Akshaya and Hrushikesh
 -------------------------------------------------------------------------------------------------
 
+Dialect is a hibernate software library which contains class and interfaces to interact with specific db and generate queries dynamically(on the fly)
+
 1. What is HQL?
 2. What are the important interfaces names in Hibernate?
 SessionFactory (org.hibernate.SessionFactory)

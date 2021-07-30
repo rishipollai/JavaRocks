@@ -201,3 +201,31 @@ hint: In case of checked, you must handle exception using catch block, while in 
 
 43. What is Dialects?
 =============================================
+
+View vs Materialised View 
+Annotation in Hibernate
+Concurrent Collections used
+Blocking Queue
+Authorization in Interservice Communications
+Distributed Transaction Management in Microservices
+Paging in result set
+@Async
+CompletableFuture
+Future
+Executor Service
+Performance testing for the services
+TDD 
+Default Value for a column in DB 
+UniDirectional vs Bidirectional mapping
+JPQL vs Hibernate
+Spring Security on what Levels
+Spring validations multiple strategy
+Why BELK, why not BEK
+@Temporal 
+@Transient
+@SpringBootApplication
+@RestController vs @Controller
+@Transactional, Cascade, Fetch, Merge, Persist, Update, Save, Load, Get
+Hibernate Entity Life cycle
+
+==========================================================

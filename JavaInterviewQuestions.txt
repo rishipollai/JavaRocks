@@ -200,6 +200,35 @@ hint: In case of checked, you must handle exception using catch block, while in 
 42. Wrapper Class?
 
 43. What is Dialects?
+=========================================================
+
+What is Spring and spring boot?
+What is hibernate?
+What is JPA?
+What is Front end technologies?
+How can validate requests?
+What is Join in database?
+What is views in database?
+Deployment of a Spring API app?
+What is JPA vs Hibernate?
+How data source will be initialized in spring boot if you are using hibernate?
+Synchronized in java as well as in spring boot
+What is Comparator vs comparable
+What is Transactional annotation?
+What is Controller vs RestController?
+How to deploy a spring boot application?
+What are the annotations used under a rest controller?
+How to sync with database?
+Configuration to sync database?
+How to deploy your project?
+What are the configuration of the deployment?
+Where write configuration of the deployment?
+How to set properties in Spring Boot APP?
+Poper way to write validations in Spring Boot?
+What is Servlet functionalities?
+What is Configuring Spring RestAPI?
+What is JDBC Connection?
+
 =============================================
 
 View vs Materialised View 

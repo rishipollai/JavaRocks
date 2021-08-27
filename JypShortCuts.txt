@@ -1,0 +1,7 @@
+esc+m -> for markdown
+## -> bold in markdown
+-   -> for list in markdown
+shift+enter ->run and new cell below
+cltr+enter -> run the cell
+alt+enter  -> new cell bellow
+d+d -> delete cell
